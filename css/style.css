@@ -21,11 +21,19 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
   height: 100vh;
+  color: var(--font-color);
+  font-family: var(--font-primary);
+}
+
+a {
+  flex-flow: column;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
@@ -95,6 +103,62 @@ header .container {
 
 section {
   flex: 1 1 auto;
+}
+
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.roadmap h1 {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-style: italic;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.roadmap p {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: var(--font-secondary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.roadmap-section-left {
+  display: inline;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  height: 100%;
+}
+
+.roadmap-section-right {
+  display: inline;
+  flex-direction: column;
+  justify-content: top;
+  align-items: right;
+  height: 100%;
+  text-align: right;
+}
+
+.roadmap-section-right p {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: var(--font-secondary);
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.roadmap-section-left p {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: var(--font-secondary);
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
 .countdown {
